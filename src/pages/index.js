@@ -17,9 +17,7 @@ export default function Home() {
                 <link rel='icon' href='/favicon.ico' />
             </Head>
             <>
-                <section className='test'>
-                    <KanbanBoard />
-                </section>
+                <KanbanBoard />
             </>
         </>
     );

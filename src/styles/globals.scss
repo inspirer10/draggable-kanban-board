@@ -36,7 +36,7 @@ img {
         gap: 0.75rem;
         padding: 3rem;
         .column {
-            width: calc(75% / 5);
+            width: calc(80% / 5);
             //display: flex;
             flex-shrink: 0;
             margin: 0 0.5rem;
@@ -219,5 +219,78 @@ img {
     50% {
         transform: translateY(0);
         animation-timing-function: cubic-bezier(0, 0, 0.2, 1);
+    }
+}
+
+@media screen and (max-width:1500px) {
+    .board-container {
+        .columns-wrapper {
+            gap: 0.75rem;
+            padding: 1.25rem;
+            .column {
+                width: calc(90% / 5);
+            }
+        }
+    }
+}
+
+@media screen and (max-width:1300px) {
+    .board-container {
+        .columns-wrapper {
+            gap: 0.5rem;
+            padding: 0.5rem;
+        }
+    }
+    .remove-card {
+        margin-left: 0.25rem;
+    }
+}
+
+@media screen and (max-width:1100px) {
+    .board-container {
+        .columns-wrapper {
+            gap: 0.25rem;
+            padding: 0.25rem;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            .column {
+                width: calc(100% / 5);
+            }
+        }
+    }
+    .remove-card {
+        height: 10rem;
+        width: 10rem;
+    }
+    .card {
+        padding: 10px 8px;
+        .card-content .card-text {
+            font-size: 17px;
+            font-weight: 300;
+        }
+    }
+}
+
+@media screen and (max-width:600px) {
+    .board-container {
+        height: auto;
+        .columns-wrapper {
+            justify-content: center;
+            gap: 0.25rem;
+            padding: 0.25rem;
+            .column {
+                margin: 0vh 0.15rem 5vh;
+                width: 47.5%;
+            }
+        }
+    }
+    .card {
+        .card-content .card-text {
+            font-size: 16px;
+        }
+    }
+    .remove-card {
+        margin-left: 0;
+        margin-bottom: 5vh;
     }
 }
